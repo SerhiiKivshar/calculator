@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@1,300&family=Quantico:ital@1&display=swap');
+@font-face {
+    font-family: "technology";
+    src: url("./fonts/technology.italic-webfont.woff") format("woff"), 
+         url("./fonts/technology.italic-webfont.woff2") format("woff2");
+
+    /* font-family: "calc";
+    src: url("./fonts/seg/segment7-4gml-webfont.woff") format("woff"), 
+         url("./fonts/seg/segment7-4gml-webfont.woff2") format("woff2"); */
+  }
+body{
+    margin: 0;
+    padding: 0;
+}
+.telo-calc {
+ margin-top: 40px;
+ margin-left: 40px;
+ width: 408px;
+ height: 500px;
+ background-color: rgb(56, 54, 54);  
+ padding-top: 15px;
+ border-radius: 2% 2% 3% 3%;
+ color: #fff;
+}
+.nadpisi {
+    border: 3px solid rgb(63, 62, 62);
+    margin-left: 15px;
+    margin-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.pervi-riyad {
+    display: flex;
+}
+
+.citizen {
+    margin-left: 15px;
+    font-size: 25px;
+}
+
+.sdc {
+    margin-left: 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    padding-top: 7px;
+}
+
+.wtoroi-riyad{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+    margin-left: 15px;
+
+}
+.blok-cifry {
+width: 210px;
+margin-left: 30px;
+margin-top: 50px;
+}
+
+.vse-knopki div {
+    float: left;
+}
+
+/* .vse-knopki {
+    border: 1px solid rgb(63, 62, 62);
+} */
+
+.blok-cifry button {
+    width: 60px;
+    height: 52px;
+    background-color: hsl(0, 4%, 54%);
+    color: #fff;
+    font-size: 32px;
+    font-weight: 500;
+    text-align: center;
+    border: 0.8px solid rgb(131, 129, 129);
+    margin-bottom: 10px;
+    border-radius: 7%;
+    margin-left: 5px;
+    
+}
+.blok-cifry button:hover {
+    /* background-color:rgba(138, 133, 133, 0.863) ; */
+    background-color: hsl(0, 4%, 59%);
+}
+
+.blok-cifry button:active {
+    background-color: hsl(0, 4%, 54%);
+}
+
+.okno-vivoda {
+    background-color: rgb(166, 190, 168);
+    max-width: 348px;
+    height: 66px;
+    margin-left: 25px;
+    margin-top: 40px;
+    border: 1px solid #000;
+    color: #000;
+    text-align: right;
+    font-family: 'technology', sans-serif;
+    font-size: 400% ;
+    padding-right: 6px;
+    padding-top: 5px;
+}
+.okno-znacheni {
+    background-color: rgb(132, 157, 224);
+    max-width: 174px;
+    height: 20px;
+    margin-left: 10px;
+    margin-top: 5px;
+    border: 1px solid #000;
+    color: rgb(8, 8, 8);
+    text-align: right;
+    font-family: 'technology', sans-serif;
+    font-size: 70% ;
+    padding-right: 3px;
+}
+
+.math {
+    width: 160px;
+    margin-top: 50px;
+    margin-left: 7px;
+}
+.math button {
+    border: 0.8px solid rgb(29, 29, 29);
+    margin-bottom: 8px;
+    width: 60px;
+    height: 52px;
+    /* font-size: 16px; */
+    font-weight: 500;
+    border-radius: 7%;
+}
+
+.reset {
+    /* margin-top: 2px; */
+    background-color: rgb(250, 113, 34);
+    color: #fff;
+    font-size: 32px;
+    font-weight: 500;
+   
+}
+#knopka-plus {
+    background-color: rgb(34, 34, 34);
+    color: #fff;
+    height: 116px;
+    border: 0.8px solid rgb(29, 29, 29);
+ } 
+
+ #knopka-itogi {
+    background-color: rgb(34, 34, 34);
+    color: #fff;
+    height: 116px;
+    border: 0.8px solid rgb(29, 29, 29);
+    margin-top: 2px;
+    font-size: 32px;
+    font-weight: 500;
+ } 
+/* .knopka-itog {
+    margin-top: 1px;
+    background-color: rgb(34, 34, 34);
+    color: #fff;
+   } */
+.knopka-mat {
+    /* margin-top: 1px; */
+    background-color: rgb(34, 34, 34);
+    color: #fff;
+    width: 60px;
+    height: 52px;
+    font-size: 32px;
+    font-weight: 500;
+    text-align: center;
+    border: none;
+}
+
+.knopka-mat:hover {
+    background-color: rgb(40, 40, 40); 
+}
+
+.knopka-mat:active {
+    background-color: rgb(34, 34, 34);
+}
+
+#knopka-plus:hover {
+    background-color: rgb(40, 40, 40); 
+}
+
+#knopka-plus:active {
+    background-color: rgb(34, 34, 34);
+}
+
+#knopka-itogi:hover {
+    background-color: rgb(40, 40, 40); 
+}
+
+#knopka-itogi:active {
+    background-color: rgb(34, 34, 34);
+}
+
+.reset:hover {
+    background-color: rgb(252, 126, 54); 
+}
+
+.reset:active {
+    background-color: rgb(250, 113, 34);
+}
