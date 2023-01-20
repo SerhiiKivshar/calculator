@@ -34,19 +34,7 @@ buttonCifr.forEach (buttonNode => {
 
  function matematik (a, b){
     let rez = 0;
-    if ((znak === 'del' || znak === 'umn') & b === 0) {
-        switch (znak) {
-    
-            case 'sum': rez = a + b;
-            break;
-            case 'vich': rez = a - b;
-            break;
-            case 'umn': rez = b;
-            break;
-            case 'del': rez = a;
-            break;
-        }}
-    else {
+   
         switch (znak) {
     
             case 'sum': rez = a + b;
@@ -58,16 +46,13 @@ buttonCifr.forEach (buttonNode => {
             case 'del': rez = a / b;
             break;
         }
-    }
-
-
     return rez;
 }
 
  
  const pidrahunok = function (coto){
     
-    if (argOne === 0) {
+    if (argOne === 0 & rezSum === 0) {
         // rezSum = matematik(cisKonCifra, argOne);
         rezSum = cisKonCifra;
 
@@ -101,6 +86,7 @@ function summTwoArg () {
         outPut.innerText = String(rezSum).substring(0, 13);}
     // tekZnach();
     // argOne = 0;
+    konCifra = '';
  }
 
  itogBtn.addEventListener('click', summTwoArg);
@@ -115,6 +101,7 @@ function summTwoArg () {
     argOne = 0;
     rezSum = 0;
     cisKonCifra= 0;
+    znak = 'sum';
     // tekZnach();
     outPut.innerText = '0';
 }
