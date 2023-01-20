@@ -34,19 +34,33 @@ buttonCifr.forEach (buttonNode => {
 
  function matematik (a, b){
     let rez = 0;
-    if (znak === 'del' & b === 0) {b = 1}
-    if (znak === 'umn' & b === 0) {b = 1}
-    switch (znak) {
-   
-    case 'sum': rez = a + b;
-    break;
-    case 'vich': rez = a - b;
-    break;
-    case 'umn': rez = a * b;
-    break;
-    case 'del': rez = a / b;
-    break;
+    if ((znak === 'del' || znak === 'umn') & b === 0) {
+        switch (znak) {
+    
+            case 'sum': rez = a + b;
+            break;
+            case 'vich': rez = a - b;
+            break;
+            case 'umn': rez = b;
+            break;
+            case 'del': rez = a;
+            break;
+        }}
+    else {
+        switch (znak) {
+    
+            case 'sum': rez = a + b;
+            break;
+            case 'vich': rez = a - b;
+            break;
+            case 'umn': rez = a * b;
+            break;
+            case 'del': rez = a / b;
+            break;
+        }
     }
+
+
     return rez;
 }
 
@@ -54,7 +68,9 @@ buttonCifr.forEach (buttonNode => {
  const pidrahunok = function (coto){
     
     if (argOne === 0) {
-        rezSum = matematik(cisKonCifra, argOne);
+        // rezSum = matematik(cisKonCifra, argOne);
+        rezSum = cisKonCifra;
+
     }
     else {
         rezSum = matematik(argOne, cisKonCifra);}
