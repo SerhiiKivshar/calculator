@@ -65,6 +65,7 @@ buttonCifr.forEach (buttonNode => {
     if (!isNaN(rezSum)){
         outPut.innerText = String(rezSum).substring(0, 13);
     }   
+
     // else {   outPut.innerText = rezSum;
     // }
     // cisKonCifra = rezSum;
@@ -89,6 +90,10 @@ function summTwoArg () {
     // tekZnach();
     // argOne = 0;
     konCifra = '';
+    cisKonCifra = rezSum;
+    argOne = 0;
+    rezSum = 0;
+    
  }
 
  itogBtn.addEventListener('click', summTwoArg);
