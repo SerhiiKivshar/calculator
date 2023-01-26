@@ -46,14 +46,15 @@ buttonCifr.forEach (buttonNode => {
             case 'del': rez = a / b;
             break;
         }
+      
     return rez;
 }
 
  
  const pidrahunok = function (coto){
-    
+    tekZnachToConsole ();
     if (argOne === 0 & rezSum === 0) {
-        // rezSum = matematik(cisKonCifra, argOne);
+        
         rezSum = cisKonCifra;
 
     }
@@ -79,9 +80,10 @@ mathBtn.forEach (buttonM => {
 
 function summTwoArg () {
     
-   
+    tekZnachToConsole ();
     rezSum = matematik(argOne, cisKonCifra);
-    cisKonCifra = rezSum;
+    // cisKonCifra = rezSum;
+    argOne = rezSum;
     if (!isNaN(rezSum)){
         outPut.innerText = String(rezSum).substring(0, 13);}
     // tekZnach();
@@ -108,6 +110,10 @@ function summTwoArg () {
  resetBtn.addEventListener('click', clearRez);
 
  //функция вывода текущих значений
+
+function tekZnachToConsole (){
+    console.log (`kC=${konCifra} znak=${znak} aO=${argOne} rZ=${rezSum} cKS=${cisKonCifra}`);
+}
 
 //  function tekZnach (){
 //     outZnach.innerText = `kC=${konCifra} znak=${znak} aO=${argOne} rZ=${rezSum} cKS=${cisKonCifra}`;
