@@ -11,10 +11,12 @@
 body{
     margin: 0;
     padding: 0;
+    min-width: 408px;
 }
 .telo-calc {
  margin-top: 40px;
  margin-left: 40px;
+ margin-right: 40px;
  width: 408px;
  height: 500px;
  background-color: rgb(56, 54, 54);  
